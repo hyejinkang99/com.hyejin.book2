@@ -16,9 +16,9 @@ script: "./gradlew clean build"
 before_install:
   - chmod +x gradlew
 before_deploy:
-  - zip -r hyejin-springboot-webservice
+  - zip -r com.hyejin.book2
   - mkdir -p deploy
-  - mv hyejin-springboot-webservice.zip deploy/hyejin-springboot-webservice.zip
+  - mv com.hyejin.book2.zip deploy/com.hyejin.book2.zip
 
 deploy:
   - provider: s3
